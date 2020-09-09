@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom'
 import Hello from './Hello'
 import World from './World'
+
+
+
 
 export default class App extends Component {
   constructor() {
@@ -54,14 +56,15 @@ export default class App extends Component {
           mounted={mountedWorld} 
           handleMountedWorld={this.handleMountedWorld.bind(this)}   
         />
+        
         <button onClick={this.handleHello.bind(this)}>Changer le message Hello</button>
+        <button onClick={this.handleWorld.bind(this)}>Changer le message World</button>
+        
+        
+
       </div>
     )
   }
 }
 
-render(
-  <App />, 
-  document.getElementById('root')
-)
 

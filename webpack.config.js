@@ -1,7 +1,7 @@
 const { resolve } = require('path')
 
 module.exports = {
-  entry: resolve('./src/ToDo.js'),
+  entry: resolve('./src/js/render.js'),
   output: {
     path: resolve('./dist'),
     filename: 'bundle.min.js'
@@ -22,7 +22,22 @@ module.exports = {
         use: {
           loader: "url-loader"
         },
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
     ]
   }
 }
