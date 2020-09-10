@@ -22,10 +22,9 @@ export default class PokemonList extends Component {
   
     render() {
       console.log(this.state.pokemons);
-      
       return (
         <ul>
-          { this.state.pokemons.map(pokemon => <li><a href = {pokemon.url}>{pokemon.name}</a></li>)}
+          { this.state.pokemons.map(pokemon => <li key = {pokemon.url}><a href = {pokemon.url}>{pokemon.name}</a></li>)}
         </ul>
       )
     }

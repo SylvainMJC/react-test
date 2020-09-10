@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
+
 import { render } from 'react-dom';
 
 //IMPORT COMPONENTS
 import PokemonList from './PokemonList';
 import App from './App';
-import ToDoList from './ToDoList';
+import TodoList from "./TodoList";
 
 //IMPORT STYLES
 import '../scss/style.scss';
@@ -22,7 +24,9 @@ render(
   )
 
 
-render(
-    <ToDoList />, 
-    document.getElementById('ToDoList')
-  )
+ReactDOM.render(
+  <div>
+    <TodoList/>
+  </div>,
+  document.querySelector("#ToDoList")
+);
