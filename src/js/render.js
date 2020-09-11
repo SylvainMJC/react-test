@@ -24,7 +24,7 @@ render(
   )
 
 
-ReactDOM.render(
+render(
   <div>
     <TodoList/>
   </div>,
