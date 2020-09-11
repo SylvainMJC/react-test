@@ -1,5 +1,6 @@
 Ce projet contient des exercices de Javascript React:
-    - Hello World (App.js, Hello.js & World.js)
+
+    - Hello World (App.js, Hello.js & World.js) 
     - Fetch 5 pokémons de pokéapi (PokemonList.js)
     - Créer une ToDoList (TodoList.js & TodoItems.js)
 
