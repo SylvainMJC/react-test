@@ -36,9 +36,6 @@ class TodoList extends Component {
             items: filteredItems
         });
 
-        
-
-
         let url ='http://localhost/api-test/api/task/delete.php?key=';
         url = url.concat(key);
         axios.get(url, { key : key } )
@@ -46,7 +43,6 @@ class TodoList extends Component {
                 console.log(response);
             });
        
-        
       }
            
     addItem(e) {
@@ -57,11 +53,11 @@ class TodoList extends Component {
               key: uniqid()
             };
             console.log(newItem.key);
-         
-            axios.post('http://localhost/api-test/api/task/create.php', {
+          axios.post('http://localhost/api-test/api/task/create.php', {
                 name: newItem.name,
                 key: newItem.key,
               })
+           
               .then((response) => {
                 console.log(response);
               }, (error) => {

@@ -1,10 +1,13 @@
 const { resolve } = require('path')
 
 module.exports = {
-  entry: resolve('./src/js/render.js'),
+  entry:  {
+    mtgDeckBuilder: './src/js/renderMTG.js',
+    index: resolve('./src/js/renderIndex.js')
+  },
   output: {
     path: resolve('./dist'),
-    filename: 'bundle.min.js'
+    filename: '[name].min.js'
   },
   watch: true,
   mode: "development",

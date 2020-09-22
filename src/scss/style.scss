@@ -17,8 +17,25 @@ body{
     border: 2px solid black;
 }
 
+.deck{
+    height:800px;
+}
 
 #ToDoList {
     display: flex;
     justify-content: center;
   }
+
+
+.imgMTGcard{
+    display:none;
+}
+
+.nameMTGcard{
+    position: relative;
+}
+
+.nameMTGcard:hover .imgMTGcard{
+    display: block;
+    position:absolute;
+}

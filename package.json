@@ -21,6 +21,7 @@
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "css-loader": "^4.3.0",
     "sass": "^1.26.10",
     "sass-loader": "^10.0.2",
