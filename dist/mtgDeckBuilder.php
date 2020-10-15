@@ -8,6 +8,10 @@
     
 </div>
 
+<div class="mtg">
+    <a class="btn btn-success" href="./index.php">Back to the ToDoList</a>
+</div>
+
 
 <!-- SCRIPTS  -->
 <script src="./mtgDeckBuilder.min.js"></script>

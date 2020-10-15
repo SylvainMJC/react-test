@@ -6,7 +6,6 @@ import { render } from 'react-dom';
 //IMPORT COMPONENTS
 import MTGcards from "./MTGcards";
 import MTGbuilder from "./MTGbuilder";
-import Autocomplete from "./Autocomplete"
 
 //IMPORT STYLES
 import '../scss/style.scss';

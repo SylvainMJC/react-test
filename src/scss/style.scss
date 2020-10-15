@@ -7,7 +7,7 @@ body{
 
 
 .mainDiv{
-    width:100%;
+    width:40%;
     height:100%;
     margin-right: 2rem;
     margin-left: 2rem;
@@ -24,18 +24,43 @@ body{
 #ToDoList {
     display: flex;
     justify-content: center;
+    
   }
 
 
 .imgMTGcard{
     display:none;
+    z-index:1;
+    width:200px;
+    height: auto;
+    position:absolute;
+    left: 40px;
 }
 
 .nameMTGcard{
     position: relative;
+    color:gold;
+    border: 0.5px dotted gold;
+    list-style: none;
+}
+
+.cardList{
+
+    text-decoration: none;
 }
 
 .nameMTGcard:hover .imgMTGcard{
     display: block;
-    position:absolute;
+
+
+}
+
+.imgcard:hover{
+    display:none;
+}
+
+.imgcard{
+    width:300px;
+    height:auto;
+    border-radius: 14px;
 }

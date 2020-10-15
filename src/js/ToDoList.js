@@ -16,7 +16,7 @@ class TodoList extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost/api-test/api/task/read.php`)
+        axios.get(`https://api-todo-list-sylvain.herokuapp.com/api/task/read.php`)
             .then(res => {
                 console.log(res)
                 const items = res.data.records;
@@ -36,7 +36,7 @@ class TodoList extends Component {
             items: filteredItems
         });
 
-        let url ='http://localhost/api-test/api/task/delete.php?key=';
+        let url ='https://api-todo-list-sylvain.herokuapp.com/api/task/delete.php?key=';
         url = url.concat(key);
         axios.get(url, { key : key } )
             .then((response) => {
@@ -53,7 +53,7 @@ class TodoList extends Component {
               key: uniqid()
             };
             console.log(newItem.key);
-          axios.post('http://localhost/api-test/api/task/create.php', {
+          axios.post('https://api-todo-list-sylvain.herokuapp.com/api/task/create.php', {
                 name: newItem.name,
                 key: newItem.key,
               })
